@@ -1,0 +1,1571 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Demo Queries - CustomerSalesDW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#demo-queries" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="CustomerSalesDW" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                CustomerSalesDW
+              </span>
+              <span class="md-header-nav__topic">
+                Demo Queries
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="CustomerSalesDW" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    CustomerSalesDW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Demo Queries
+      </label>
+    
+    <a href="./" title="Demo Queries" class="md-nav__link md-nav__link--active">
+      Demo Queries
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-total-revenue" title="1. Total Revenue" class="md-nav__link">
+    1. Total Revenue
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-transactional-db-customersales" title="On transactional db CustomerSales" class="md-nav__link">
+    On transactional db CustomerSales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-dimensional-db-customersalesdw" title="On dimensional db CustomerSalesDW" class="md-nav__link">
+    On dimensional db CustomerSalesDW
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-revenue-per-region" title="2. Revenue per region" class="md-nav__link">
+    2. Revenue per region
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-transactional-db-customersales_1" title="On transactional db CustomerSales" class="md-nav__link">
+    On transactional db CustomerSales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-dimensional-db-customersalesdw_1" title="On dimensional db CustomerSalesDW" class="md-nav__link">
+    On dimensional db CustomerSalesDW
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-monthly-revenue" title="3. Monthly revenue" class="md-nav__link">
+    3. Monthly revenue
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-transactional-db-customersales_2" title="On transactional db CustomerSales" class="md-nav__link">
+    On transactional db CustomerSales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-dimensional-db-customersalesdw_2" title="On dimensional db CustomerSalesDW" class="md-nav__link">
+    On dimensional db CustomerSalesDW
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sales-transactions-per-month" title="4. Sales transactions per month" class="md-nav__link">
+    4. Sales transactions per month
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-monthly-product-revenue" title="5. Monthly product revenue" class="md-nav__link">
+    5. Monthly product revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-compare-revenue-figures" title="6. Compare revenue figures" class="md-nav__link">
+    6. Compare revenue figures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-revenue-as-percentage-of-total-1" title="7. Revenue as percentage of total (1)" class="md-nav__link">
+    7. Revenue as percentage of total (1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-revenue-as-percentage-of-total-2" title="8. Revenue as percentage of total (2)" class="md-nav__link">
+    8. Revenue as percentage of total (2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-individual-vs-average-sales" title="9. Individual vs average sales" class="md-nav__link">
+    9. Individual vs average sales
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-cumulative-revenue" title="10. Cumulative revenue" class="md-nav__link">
+    10. Cumulative revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-yoy-cumulative-sales-increase" title="11. YoY cumulative sales increase" class="md-nav__link">
+    11. YoY cumulative sales increase
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-average-of-last-two" title="12. Average of last two" class="md-nav__link">
+    12. Average of last two
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-weekday-revenue-percentage" title="13. Weekday revenue percentage" class="md-nav__link">
+    13. Weekday revenue percentage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-ranking-revenue-figures" title="14. Ranking revenue figures" class="md-nav__link">
+    14. Ranking revenue figures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-abc-labeling" title="15. ABC labeling" class="md-nav__link">
+    15. ABC labeling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-basic-statistical-measures" title="16. Basic statistical measures" class="md-nav__link">
+    16. Basic statistical measures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-revenue-contribution" title="17. Revenue contribution" class="md-nav__link">
+    17. Revenue contribution
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../exercisequeries/" title="Exercise Queries" class="md-nav__link">
+      Exercise Queries
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-total-revenue" title="1. Total Revenue" class="md-nav__link">
+    1. Total Revenue
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-transactional-db-customersales" title="On transactional db CustomerSales" class="md-nav__link">
+    On transactional db CustomerSales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-dimensional-db-customersalesdw" title="On dimensional db CustomerSalesDW" class="md-nav__link">
+    On dimensional db CustomerSalesDW
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-revenue-per-region" title="2. Revenue per region" class="md-nav__link">
+    2. Revenue per region
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-transactional-db-customersales_1" title="On transactional db CustomerSales" class="md-nav__link">
+    On transactional db CustomerSales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-dimensional-db-customersalesdw_1" title="On dimensional db CustomerSalesDW" class="md-nav__link">
+    On dimensional db CustomerSalesDW
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-monthly-revenue" title="3. Monthly revenue" class="md-nav__link">
+    3. Monthly revenue
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-transactional-db-customersales_2" title="On transactional db CustomerSales" class="md-nav__link">
+    On transactional db CustomerSales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-dimensional-db-customersalesdw_2" title="On dimensional db CustomerSalesDW" class="md-nav__link">
+    On dimensional db CustomerSalesDW
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sales-transactions-per-month" title="4. Sales transactions per month" class="md-nav__link">
+    4. Sales transactions per month
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-monthly-product-revenue" title="5. Monthly product revenue" class="md-nav__link">
+    5. Monthly product revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-compare-revenue-figures" title="6. Compare revenue figures" class="md-nav__link">
+    6. Compare revenue figures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-revenue-as-percentage-of-total-1" title="7. Revenue as percentage of total (1)" class="md-nav__link">
+    7. Revenue as percentage of total (1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-revenue-as-percentage-of-total-2" title="8. Revenue as percentage of total (2)" class="md-nav__link">
+    8. Revenue as percentage of total (2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-individual-vs-average-sales" title="9. Individual vs average sales" class="md-nav__link">
+    9. Individual vs average sales
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-cumulative-revenue" title="10. Cumulative revenue" class="md-nav__link">
+    10. Cumulative revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-yoy-cumulative-sales-increase" title="11. YoY cumulative sales increase" class="md-nav__link">
+    11. YoY cumulative sales increase
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-average-of-last-two" title="12. Average of last two" class="md-nav__link">
+    12. Average of last two
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-weekday-revenue-percentage" title="13. Weekday revenue percentage" class="md-nav__link">
+    13. Weekday revenue percentage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-ranking-revenue-figures" title="14. Ranking revenue figures" class="md-nav__link">
+    14. Ranking revenue figures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-abc-labeling" title="15. ABC labeling" class="md-nav__link">
+    15. ABC labeling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-basic-statistical-measures" title="16. Basic statistical measures" class="md-nav__link">
+    16. Basic statistical measures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-revenue-contribution" title="17. Revenue contribution" class="md-nav__link">
+    17. Revenue contribution
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="demo-queries">Demo Queries<a class="headerlink" href="#demo-queries" title="Permanent link">&para;</a></h1>
+<h2 id="1-total-revenue">1. Total Revenue<a class="headerlink" href="#1-total-revenue" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate revenue of all registered sales transactions.</strong></p>
+<p>In order to properly value the benefits of having crated a dimensional model of the contents of a transactional model, we first show solutions for this query on both the transactional and the dimensional database.</p>
+<h3 id="on-transactional-db-customersales">On transactional db CustomerSales<a class="headerlink" href="#on-transactional-db-customersales" title="Permanent link">&para;</a></h3>
+<p>The idea is to first calculate the value of each order line and then sum up those values but we first have to retrieve the price a product had when the order was placed.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">quantity</span> <span class="o">*</span> <span class="n">price</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">custorder</span> <span class="n">o</span>
+<span class="k">join</span> <span class="n">orderline</span> <span class="n">l</span>
+    <span class="k">on</span> <span class="n">o</span><span class="p">.</span><span class="n">orderno</span> <span class="o">=</span> <span class="n">l</span><span class="p">.</span><span class="n">orderno</span>
+<span class="k">join</span> <span class="n">productprice</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">l</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">and</span> <span class="n">orderdate</span> <span class="k">between</span> <span class="n">startdate</span> <span class="k">and</span> <span class="n">enddate</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="on-dimensional-db-customersalesdw">On dimensional db CustomerSalesDW<a class="headerlink" href="#on-dimensional-db-customersalesdw" title="Permanent link">&para;</a></h3>
+<p>As the dimensional database is for reporting and analysis purposes only (we won't use it to change data as for instance changing a product's price), we've already calculated the proper order line value upon creating the database. This makes many of our (reporting) queries so much easier!</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="2-revenue-per-region">2. Revenue per region<a class="headerlink" href="#2-revenue-per-region" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate revenue per sales region of all registered sales transactions.</strong></p>
+<h3 id="on-transactional-db-customersales_1">On transactional db CustomerSales<a class="headerlink" href="#on-transactional-db-customersales_1" title="Permanent link">&para;</a></h3>
+<p>In order to get each customer's region code, you have to look it up in the sales region table using part of the customer address as lookup key:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">quantity</span> <span class="o">*</span> <span class="n">price</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">salesregion</span> <span class="n">r</span>
+<span class="k">join</span> <span class="n">customer</span> <span class="k">c</span>
+    <span class="k">on</span> <span class="k">left</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="k">between</span> <span class="n">pcbegin</span> <span class="k">and</span> <span class="n">pcend</span>
+<span class="k">join</span> <span class="n">custorder</span> <span class="n">o</span>
+    <span class="k">on</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="n">o</span><span class="p">.</span><span class="n">custno</span>
+<span class="k">join</span> <span class="n">orderline</span> <span class="n">l</span>
+    <span class="k">on</span> <span class="n">o</span><span class="p">.</span><span class="n">orderno</span> <span class="o">=</span> <span class="n">l</span><span class="p">.</span><span class="n">orderno</span>
+<span class="k">join</span> <span class="n">productprice</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">l</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">and</span> <span class="n">orderdate</span> <span class="k">between</span> <span class="n">startdate</span> <span class="k">and</span> <span class="n">enddate</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="on-dimensional-db-customersalesdw_1">On dimensional db CustomerSalesDW<a class="headerlink" href="#on-dimensional-db-customersalesdw_1" title="Permanent link">&para;</a></h3>
+<p>In the dimensional version of CustomerSales, the Customer and SalesRegion tables have been flattened into a single dimDimension table. This leads to much easier retrieval:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+<span class="k">join</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="3-monthly-revenue">3. Monthly revenue<a class="headerlink" href="#3-monthly-revenue" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate monthly revenue per product category in 2016.</strong></p>
+<h3 id="on-transactional-db-customersales_2">On transactional db CustomerSales<a class="headerlink" href="#on-transactional-db-customersales_2" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">quantity</span> <span class="o">*</span> <span class="n">price</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">custorder</span> <span class="n">o</span>
+<span class="k">join</span> <span class="n">orderline</span> <span class="n">l</span>
+    <span class="k">on</span> <span class="n">o</span><span class="p">.</span><span class="n">orderno</span> <span class="o">=</span> <span class="n">l</span><span class="p">.</span><span class="n">orderno</span>
+<span class="k">join</span> <span class="n">product</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">l</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">join</span> <span class="n">productprice</span> <span class="n">pp</span>
+    <span class="k">on</span> <span class="n">pp</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">l</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">and</span> <span class="n">orderdate</span> <span class="k">between</span> <span class="n">startdate</span> <span class="k">and</span> <span class="n">enddate</span>
+<span class="k">where</span> <span class="n">orderdate</span> <span class="k">between</span> <span class="s1">&#39;2016-01-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2016-12-31&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="n">catcode</span>
+<span class="k">order</span> <span class="k">by</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="n">catcode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="on-dimensional-db-customersalesdw_2">On dimensional db CustomerSalesDW<a class="headerlink" href="#on-dimensional-db-customersalesdw_2" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+<span class="k">join</span> <span class="n">dimDate</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="4-sales-transactions-per-month">4. Sales transactions per month<a class="headerlink" href="#4-sales-transactions-per-month" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate for each customer the number of sales transactions per month in 2016. Show months without transactions as 0.</strong></p>
+<p>I hope I have convincingly made my case that it is easier to query a dimensional database than a transactional database. All remaining queries are defined on the dimensional database.</p>
+<p>In one of the earlier queries, months without sales for any of the product categories, wouldn't be visible. For reporting purposes, this is often undesirable. Instead of being invisible, months without sales should be presented as months with 0 revenue. Likewise, months without transactions should be presented as months with 0 transactions.</p>
+<p>Using a standard inner join won't do the job: it leaves out months without transactions:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- wrong result!</span>
+<span class="k">select</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">monthno</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">transactions</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">name</span><span class="p">,</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that factSales has order line granularity. In order to get the number of transactions, we have to count the number of unique (distinct) order numbers.</p>
+<p>We have to use an outer join to preserve month without sales. As a result, we can't use the orderdate from factSales and that's exactly the reason we've created a date dimension in our model. A first (wrong) attempt could be:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- wrong result!</span>
+<span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">transactions</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">dimDate</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">name</span><span class="p">,</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Run the query and explain why this is not working.</p>
+<p>The following query is a working solution. It cross joins dimCustomer with dimDate in order to create all possible customer-month combinations. The result of the cross join is the (left) outer joined with factSales and thus effectively preserve all customer-month combination without sales transactions.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">transactions</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">name</span><span class="p">,</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="5-monthly-product-revenue">5. Monthly product revenue<a class="headerlink" href="#5-monthly-product-revenue" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate monthly revenue of zwezerik (product: sweetbread) in 2016. Show months without sales as 0.</strong></p>
+<p>A working solution in the spirit of previous solution would be:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>That's it, working. My advise would be to stick to this pattern of solving this kind of questions.</p>
+<p>If you're interested, an alternative solution would be:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+<span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="k">right</span> <span class="k">join</span> <span class="n">dimDate</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>This is an interesting query. Why did we use a right join instead of the more common left join? Let's set up a solution using left joins:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- wrong result!</span>
+<span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>As joins evaluate from left to right, we obviously have to left join dimProduct as well in order to keep preserving the empty months from dimDate. However, the query does not return the correct results. Analyzing the results will learn you that the filter on proddesc (selecting 'zwezerik' only) hasn't worked out. The problem is that dimProduct is left joined with the result of the first left join. This means that all factSales lines will be in the result set even if there were no 'zwezerik' sales involved. And as line totals are summed from the factSales table, this obviously leads to the wrong result. As a simple insight in the problem, you could add a count on linetotal and a count on proddesc:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- wrong result!</span>
+<span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span><span class="p">,</span>
+    <span class="k">count</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">linetotal</span> <span class="k">values</span><span class="p">],</span> <span class="k">count</span><span class="p">(</span><span class="n">proddesc</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">zwezerik</span> <span class="n">lines</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Having different values for the number of factsales lines and order lines that involved 'zwezerik', means that you are going to end up with the wrong result. These mistakes are very difficult to spot as you get a seemingly proper result. It really demands a good understanding of SQL to avoid such mistakes!</p>
+<p>It is now easy to understand that a solution with a cross join or a right join as above is preferable over a left join solution. Here is a working left join solution:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="p">(</span>
+    <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+        <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+        <span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="p">)</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Create a column chart of the result in Excel.</p>
+<p>Here' s a short digression about creating Excel charts from SQL query results.</p>
+<p>To create an Excel visual of the result of this query, we use the following procedure:</p>
+<ol>
+<li>Create a database connection to the SQL Server database using Power Query (Get &amp; Transform).</li>
+<li>Open Advanced Options in the connection dialog and past your tested T-SQL query.</li>
+<li>Adapt your query such that the data series you want to visualize are in separate columns. (We often refer to this format as pivot format.)</li>
+<li>Load the query results to a table in a new worksheet.</li>
+<li>Use this table as a chart feeder for a suitable Excel chart.</li>
+</ol>
+<p>Why not using a pivot table with pivot charts? First of all a pivot table with pivot charts is a fine solution and indeed much more common than executing a query on the database for each visual. However, pivot tables (and I mean traditional pivot tables, not Power Pivot pivot tables) come with their disadvantages:</p>
+<ol>
+<li>not all available chart types are available as pivot chart.</li>
+<li>Pivot tables are always based on a single table. This means that you have to create a single table of all data you want to report on. Usually this means that you have to create a full join of all the data in your database. If you want to preserve all possible dimension combinations without sales (as we did for only months in previous query), this rapidly leads to a huge table. Even in our very small CustomerSales database, this leads to a table with over 2 million rows: you won't be able to load this in Excel.</li>
+</ol>
+<p>Wide vs. long format SQL tables and SQL query results are usually in long format. Suppose we have the following table</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="o">*</span>
+<span class="k">from</span> <span class="p">(</span> <span class="k">values</span>
+    <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;2017-10-21&#39;</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="s1">&#39;2017-10-21&#39;</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="s1">&#39;2017-10-21&#39;</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;2017-11-24&#39;</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;2017-11-24&#39;</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">)</span> <span class="k">as</span> <span class="n">T</span><span class="p">(</span><span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span> <span class="n">prodno</span><span class="p">,</span> <span class="n">qty</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>This yields the following table in long format:</p>
+<table>
+<thead>
+<tr>
+<th>custno</th>
+<th>orderdate</th>
+<th>prodno</th>
+<th>qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>2017-10-21</td>
+<td>103</td>
+<td>6</td>
+</tr>
+<tr>
+<td>22</td>
+<td>2017-10-21</td>
+<td>103</td>
+<td>4</td>
+</tr>
+<tr>
+<td>22</td>
+<td>2017-10-21</td>
+<td>101</td>
+<td>2</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2017-11-24</td>
+<td>103</td>
+<td>4</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2017-11-24</td>
+<td>102</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Before creating the chart feeder data, it is necessary to think about what and how you want to present in your visual. Suppose I want to present for each customer, for each month a column bar representing the quantity sold if the specific product. I want customers on the X-axis, months on slicers and products as series.</p>
+<p>The same table in wide format with products on columns, would yield:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="o">*</span>
+    <span class="k">from</span> <span class="p">(</span> <span class="k">values</span>
+        <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;2017-10-21&#39;</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="s1">&#39;2017-10-21&#39;</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="s1">&#39;2017-10-21&#39;</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;2017-11-24&#39;</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;2017-11-24&#39;</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">T</span><span class="p">(</span><span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span> <span class="n">prodno</span><span class="p">,</span> <span class="n">qty</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">mnth</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">prodno</span> <span class="o">=</span> <span class="mi">101</span> <span class="k">then</span> <span class="n">qty</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">onions</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">prodno</span> <span class="o">=</span> <span class="mi">102</span> <span class="k">then</span> <span class="n">qty</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">beans</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">prodno</span> <span class="o">=</span> <span class="mi">103</span> <span class="k">then</span> <span class="n">qty</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">potatoes</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">prodno</span> <span class="o">=</span> <span class="mi">104</span> <span class="k">then</span> <span class="n">qty</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">cabbage</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>custno</th>
+<th>orderdate</th>
+<th>onions</th>
+<th>beans</th>
+<th>potatoes</th>
+<th>cabbage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>2017-10-21</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<td>22</td>
+<td>2017-10-21</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2017-10-24</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>When table are to be presented to humans, the wide format tends to be better as it is more compact.</p>
+<p>Excel wants its chart feeders to be in wide format too. This holds for both regular charts and pivot charts. As pivot charts are based on pivot tables, the chart feeder is almost always in wide format.</p>
+<p>Sometimes Excel can express its own will when visualizing data from a chart feeder. The result may not always be to your liking. However, using the Select Data command from the Chart Tools &gt; Design ribbon will always lead to the visual you had in mind.</p>
+<h2 id="6-compare-revenue-figures">6. Compare revenue figures<a class="headerlink" href="#6-compare-revenue-figures" title="Permanent link">&para;</a></h2>
+<p><strong>Compare monthly zwezerik revenue in 2016 and 2015.</strong></p>
+<p>We get a straightforward solution by slightly adapting the previous query:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+<span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="k">right</span> <span class="k">join</span> <span class="n">dimDate</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="k">in</span> <span class="p">(</span><span class="mi">2016</span><span class="p">,</span> <span class="mi">2015</span><span class="p">)</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Create a column chart of the result in Excel.</p>
+<p>For an Excel chart, it's easier to have the result in pivot format. Different columns are translated into different series in a chart; that is exactly what we want if we want to compare without using a pivot table.</p>
+<p>To get different columns, we use a case/when in the select rather than the complicated pivot table-operator.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">year</span> <span class="k">when</span> <span class="mi">2015</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev13</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">year</span> <span class="k">when</span> <span class="mi">2016</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev14</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+<span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="k">right</span> <span class="k">join</span> <span class="n">dimDate</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="k">in</span> <span class="p">(</span><span class="mi">2016</span><span class="p">,</span> <span class="mi">2015</span><span class="p">)</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that we must no longer group on year if we wish to separate the year in each line of the result set.</p>
+<h2 id="7-revenue-as-percentage-of-total-1">7. Revenue as percentage of total (1)<a class="headerlink" href="#7-revenue-as-percentage-of-total-1" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate the monthly revenue of zwezerik in 2016 as a percentage of total revenue of that month.</strong></p>
+<p>Zwezerik's percentual contribution to the monthly revenue is of course zwezerik's part divided by total revenue. Starting from query 5's solution, we could solve it like:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthname</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span>
+        <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="p">(</span>
+            <span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span>
+            <span class="k">from</span> <span class="n">factSales</span>
+            <span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+            <span class="k">and</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="n">monthno</span>
+        <span class="p">),</span>
+        <span class="mi">0</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">%</span><span class="n">rev</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">and</span> <span class="n">proddesc</span> <span class="o">=</span> <span class="s1">&#39;zwezerik&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Here we used a so-called correlated subquery: the subquery references a column value in the outer query. As a consequence, the subquery should be re-calculated for each row in the outer query, and hence are usually expensive performance wise.</p>
+<h2 id="8-revenue-as-percentage-of-total-2">8. Revenue as percentage of total (2)<a class="headerlink" href="#8-revenue-as-percentage-of-total-2" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate the monthly revenue in 2016 of each product category as a percentage of total revenue of that month.</strong></p>
+<p>This is a generalization of previous question, but now for product category instead of product A solution in line with previous solution would be:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span>
+        <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="p">(</span>
+            <span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span>
+            <span class="k">from</span> <span class="n">factSales</span>
+            <span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+            <span class="k">and</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="n">monthno</span>
+        <span class="p">),</span>
+        <span class="mi">0</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">%</span><span class="n">rev</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Because of the generalization to all product categories, we can make use of a window function:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">)),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">%</span><span class="n">rev</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that in the sum(sum()) construction, the outer sum() is the windows function that goes with the partition by whereas the inner sum() is the aggregate function that goes with the group by.</p>
+<p>In an Excel pivot table this query would be calculated using the % of row total measure with product category on rows. An SQL solution that mimics this pivot table solution would be:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthname</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">lux</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">zuv</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="9-individual-vs-average-sales">9. Individual vs average sales<a class="headerlink" href="#9-individual-vs-average-sales" title="Permanent link">&para;</a></h2>
+<p><strong>Compare yearly individual sales person revenue with (yearly) average sales person revenue. Show results in a chart.</strong></p>
+<p>The difficulty in this query is that we have to mix addition for a single salesperson with addition (and averaging) for all salespersons. In other words: we have to group on year and name and on year only in the same query. This can only be established using a subquery with its own grouping context:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="k">year</span><span class="p">,</span> <span class="n">name</span> <span class="k">as</span> <span class="n">salesrep</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span><span class="p">,</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">salesrep</span><span class="p">)</span>
+    <span class="k">from</span> <span class="n">factSales</span> <span class="n">si</span>
+    <span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">si</span><span class="p">.</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="k">year</span><span class="p">(</span><span class="n">so</span><span class="p">.</span><span class="n">orderdate</span><span class="p">)</span>
+<span class="p">)</span> <span class="k">as</span> <span class="n">avgRevenue</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">so</span>
+<span class="k">join</span> <span class="n">dimSalesPerson</span>
+    <span class="k">on</span> <span class="n">salesrep</span> <span class="o">=</span> <span class="n">empno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="n">name</span>
+<span class="k">order</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">salesrep</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>The inner query is called a correlated subquery because we link the year in the inner query to the year of the current result line in the outer query. Because of this correlation, the inner query must be evaluated for each result line in the outer query.</p>
+<h2 id="10-cumulative-revenue">10. Cumulative revenue<a class="headerlink" href="#10-cumulative-revenue" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate cumulative monthly revenue per product in 2016. Show results in a chart.</strong></p>
+<p>First use a cross join to generate all month/product combinations. Then use a left (outer) join to preserve month/product combinations without sales:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">proddesc</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">revenue</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">proddesc</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>To calculate the cumulative monthly revenue, instead of the monthly revenue, we use a window function:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">proddesc</span><span class="p">,</span>
+    <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">proddesc</span> <span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">cumrev</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">proddesc</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note the sum(sum()): the outer sum() is the window function, whereas the inner sum() is the aggregate function we used in our first step. The partition by creates a window of all lines having the same proddesc in a month/proddesc group.</p>
+<h2 id="11-yoy-cumulative-sales-increase">11. YoY cumulative sales increase<a class="headerlink" href="#11-yoy-cumulative-sales-increase" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate monthly year-over-year cumulative sales increase (percentage) for each product category in 2016.</strong></p>
+<p>This is a combination of two previous demo queries:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span>
+        <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">year</span> <span class="k">when</span> <span class="mi">2015</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">catcode</span> <span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">cumrev13</span><span class="p">,</span>
+        <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">year</span> <span class="k">when</span> <span class="mi">2016</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">catcode</span> <span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">cumrev14</span>
+    <span class="k">from</span> <span class="n">dimDate</span>
+    <span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+        <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+        <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+    <span class="k">where</span> <span class="k">year</span> <span class="k">in</span> <span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">2016</span><span class="p">)</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span>
+    <span class="p">(</span><span class="n">cumrev14</span> <span class="o">-</span> <span class="n">cumrev13</span><span class="p">)</span><span class="o">/</span><span class="n">cumrev13</span> <span class="k">as</span> <span class="p">[</span><span class="n">YoY</span> <span class="n">Rev</span> <span class="n">Increase</span> <span class="o">%</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="12-average-of-last-two">12. Average of last two<a class="headerlink" href="#12-average-of-last-two" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate for each customer the average order value of last two orders.</strong></p>
+<p>First generate a list of order values ordered by order date (most recent on top)</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">ordVal</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Then add ranking, select top 2 per customer and calculate average:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">ordVal</span><span class="p">,</span>
+        <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rnr</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="k">avg</span><span class="p">(</span><span class="n">ordval</span><span class="p">)</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rnr</span> <span class="o">&lt;=</span> <span class="mi">2</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Alternatively with a cross apply (see also this demo for a (rather elaborate) discussion of using either a ranking or a cross apply solution):</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="k">avg</span><span class="p">(</span><span class="n">ordVal</span><span class="p">)</span> <span class="k">as</span> <span class="n">avgOrdVal</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="n">apply</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">top</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">ordval</span>
+    <span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">where</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span>
+    <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span>
+<span class="p">)</span> <span class="n">s</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span><span class="p">,</span> <span class="n">name</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+<span class="k">where</span> <span class="n">ordno</span> <span class="k">in</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">top</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="n">ordno</span>
+    <span class="k">from</span> <span class="n">factSales</span> <span class="n">si</span>
+    <span class="k">where</span> <span class="n">si</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span>
+<span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="13-weekday-revenue-percentage">13. Weekday revenue percentage<a class="headerlink" href="#13-weekday-revenue-percentage" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate for each customer the percentage of orders placed on a weekday in 2016.</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+    <span class="k">avg</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">between</span> <span class="mi">2</span> <span class="k">and</span> <span class="mi">6</span> <span class="k">then</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">wkdy</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="14-ranking-revenue-figures">14. Ranking revenue figures<a class="headerlink" href="#14-ranking-revenue-figures" title="Permanent link">&para;</a></h2>
+<p><strong>Give a weekday ranking for February 2016 with the best selling (revenue) weekday on top.</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">),</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rnk</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">where</span> <span class="n">orderdate</span> <span class="k">between</span> <span class="s1">&#39;2016-02-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2016-02-28&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Looks ok, but we miss Saturday: there have been no sales on Saturday in Feb 2016. Clearly it's important to also present the days without sales. Let's fix it by outer joining with dimDate:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">dayName</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rnk</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="n">dat</span> <span class="k">between</span> <span class="s1">&#39;2016-02-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2016-02-28&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">dayName</span><span class="p">,</span> <span class="n">dayInWeek</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">dayInWeek</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that the where clause should involve the date from dimDate rather than from factSales. If not, the days without sales would have had an NULL orderDate and the line would have left out by the filter leading again to a result without days with no sales.</p>
+<p>Give a weekday ranking for February 2016 with the best selling (# transactions) weekday on top.</p>
+<p>You might think: replace the sum with a count and we're all set:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- wrong solution</span>
+<span class="k">select</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">tx</span><span class="p">],</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rnk</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="n">dat</span> <span class="k">between</span> <span class="s1">&#39;2016-02-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2016-02-28&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">),</span> <span class="n">dayInWeek</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">dayInWeek</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Alas, it turns out not to be that simple. factSales has order line granularity meaning that an order can have more than one line. We are only interested in the unique sales transactions:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">tx</span><span class="p">],</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rnk</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="n">dat</span> <span class="k">between</span> <span class="s1">&#39;2016-02-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2016-02-28&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">),</span> <span class="n">dayInWeek</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">dayInWeek</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Even if we get the same result, the former solution is wrong. We get the same results by coincidence as there where no sales transactions with more than one row in February 2016. Change the filter to February 2015 and you see immediately that the results differ! So remember, even if you test your results, you can still have a wrong query. Testing more thoroughly (using more test sets) and above all remain being critical about your products (and those of others) is the best way to prevent mistakes and avoid ill decisions based on wrongly obtained information.</p>
+<h2 id="15-abc-labeling">15. ABC labeling<a class="headerlink" href="#15-abc-labeling" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate ABC labeling for all customers.</strong></p>
+<p>Your top customers belong to the top 20% regarding revenue created. Your inactive customers belong to the tail 30% regarding revenue created. Attach an ABC label to all customers: label top customers A, inactive customers C and the remaining customers B.</p>
+<p>Instead of plain ranking with rank(), we now use the percent_rank() window function. As with plain ranking, ordering is key to obtain the ranking percentages you want.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+    <span class="k">case</span>
+        <span class="k">when</span> <span class="n">percent_rank</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">8</span> <span class="k">then</span> <span class="s1">&#39;A&#39;</span>
+        <span class="k">when</span> <span class="n">percent_rank</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">.</span><span class="mi">3</span> <span class="k">then</span> <span class="s1">&#39;C&#39;</span>
+        <span class="k">else</span> <span class="s1">&#39;B&#39;</span>
+    <span class="k">end</span> <span class="k">as</span> <span class="n">label</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Repeating the over () clause looks a bit clumsy, but it's just how the case operator works.</p>
+<p>The percent_rank() function is a bit difficult to grasp at first. The lowest ranking group is always 0%. The highest ranking group is always m/(n-1) % where n is the number of rows (observations) and m is the number of rows with a lower value for the column you want to rank on. (Hence, we always start with 0% as no rows will have a lower value than the lowest value.)</p>
+<p>Try the query below and change some data in order to get a good understanding of the percent_rank() function. Do not just change and run, but first predict what the result should be. If the result is conform your expectation, you've probably understood. If not, your mental model is wrong and you have to do some more thinking and experimenting.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">id</span><span class="p">,</span> <span class="n">percent_rank</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="n">val</span><span class="p">)</span> <span class="p">[</span><span class="o">%</span><span class="n">rank</span><span class="p">]</span>
+<span class="k">from</span> <span class="p">(</span> <span class="k">values</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">)</span> <span class="n">T</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">id</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="16-basic-statistical-measures">16. Basic statistical measures<a class="headerlink" href="#16-basic-statistical-measures" title="Permanent link">&para;</a></h2>
+<p><strong>What is the number, max, min, mean and standard deviation of the sales value per order?</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="n">ordval</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span>
+<span class="p">)</span>
+<span class="k">select</span>
+    <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">n</span><span class="p">,</span>
+    <span class="k">min</span><span class="p">(</span><span class="n">ordval</span><span class="p">)</span> <span class="k">as</span> <span class="k">min</span><span class="p">,</span>
+    <span class="k">max</span><span class="p">(</span><span class="n">ordval</span><span class="p">)</span> <span class="k">as</span> <span class="k">max</span><span class="p">,</span>
+    <span class="k">avg</span><span class="p">(</span><span class="n">ordval</span><span class="p">)</span> <span class="k">as</span> <span class="n">mean</span><span class="p">,</span>
+    <span class="n">stdev</span><span class="p">(</span><span class="n">ordval</span><span class="p">)</span> <span class="k">as</span> <span class="n">stdev</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p><strong>Create a chart feeder for a histogram of sales values per order in Excel.</strong></p>
+<p>Best to create a simple chart feeder and let Excel do the the heavy lifting of histogramming as binning is bit of a nuisance in SQL.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="n">ordval</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h2 id="17-revenue-contribution">17. Revenue contribution<a class="headerlink" href="#17-revenue-contribution" title="Permanent link">&para;</a></h2>
+<p><strong>Calculate the contribution to revenue (as percentage) of each product category in each region. Present as pivot with product categories on columns and region on rows.</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">lux</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">zuv</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Calculate the relative contribution to revenue (as percentage) of each product category in each region.</p>
+<p>Relative to what? To total regional revenue? To total product category revenue or to total overall revenue? In Excel pivot table terminology: as a % of Row Total, a % of Column Total or a % of Grand Total?</p>
+<p>We solve all three:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- percentage of regional revenue (% of row total)</span>
+<span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">lux</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">zuv</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="c1">-- percentage of product category revenue (% of column total)</span>
+<span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span>
+        <span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span>
+        <span class="k">from</span> <span class="n">dimProduct</span> <span class="n">p</span>
+        <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+            <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+        <span class="k">where</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span>
+        <span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span>
+        <span class="k">from</span> <span class="n">dimProduct</span> <span class="n">p</span>
+        <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+            <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+        <span class="k">where</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">lux</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span>
+        <span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span>
+        <span class="k">from</span> <span class="n">dimProduct</span> <span class="n">p</span>
+        <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+            <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+        <span class="k">where</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">bio</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>We can make this a bit less verbose with a common table expression:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- percentage of product category revenue (% of column total)</span>
+<span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+<span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">total</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span><span class="p">,</span> <span class="n">catcode</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">total</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">total</span><span class="p">)</span> <span class="k">from</span> <span class="n">cte</span> <span class="k">where</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="n">total</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">total</span><span class="p">)</span> <span class="k">from</span> <span class="n">cte</span> <span class="k">where</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">lux</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="n">total</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">total</span><span class="p">)</span> <span class="k">from</span> <span class="n">cte</span> <span class="k">where</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">zuv</span>
+<span class="k">from</span> <span class="n">cte</span> <span class="n">co</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Finally the query to calculate the percentage of total revenue for each region/product category combination:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- percentage of overall revenue (% of grand total)</span>
+<span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span><span class="p">())</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span><span class="p">())</span> <span class="k">as</span> <span class="n">lux</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span><span class="p">())</span> <span class="k">as</span> <span class="n">zuv</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>We do not necessarily need a window function as denominator as a straightforward subquery will do as well:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">from</span> <span class="n">factSales</span><span class="p">)</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+<span class="p">...</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../exercisequeries/" title="Exercise Queries" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Exercise Queries
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

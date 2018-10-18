@@ -1,0 +1,1382 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Exercise Queries - CustomerSalesDW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#exercise-queries" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="CustomerSalesDW" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                CustomerSalesDW
+              </span>
+              <span class="md-header-nav__topic">
+                Exercise Queries
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="CustomerSalesDW" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    CustomerSalesDW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../demoqueries/" title="Demo Queries" class="md-nav__link">
+      Demo Queries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Exercise Queries
+      </label>
+    
+    <a href="./" title="Exercise Queries" class="md-nav__link md-nav__link--active">
+      Exercise Queries
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-average-order-value" title="1. Average order value" class="md-nav__link">
+    1. Average order value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-average-number-of-items-sold-1" title="2. Average number of items sold (1)" class="md-nav__link">
+    2. Average number of items sold (1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-average-number-of-items-sold-2" title="3. Average number of items sold (2)" class="md-nav__link">
+    3. Average number of items sold (2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-proportion-of-yearly-revenue" title="4. Proportion of yearly revenue" class="md-nav__link">
+    4. Proportion of yearly revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-year-over-year-sales-1" title="5. Year-over-year sales (1)" class="md-nav__link">
+    5. Year-over-year sales (1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-year-over-year-sales-2" title="5. Year-over-year sales (2)" class="md-nav__link">
+    5. Year-over-year sales (2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-days-between-orders" title="6. Days between orders" class="md-nav__link">
+    6. Days between orders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-average-time-between-orders" title="7. Average time between orders" class="md-nav__link">
+    7. Average time between orders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cumulative-revenue" title="8. Cumulative revenue" class="md-nav__link">
+    8. Cumulative revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cumulative-revenue-pivoted" title="9. Cumulative revenue pivoted" class="md-nav__link">
+    9. Cumulative revenue pivoted
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-percentage-of-total" title="10. Percentage of total" class="md-nav__link">
+    10. Percentage of total
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-best-spending-customers" title="11. Best spending customers" class="md-nav__link">
+    11. Best spending customers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-periodical-growth" title="12. Periodical growth" class="md-nav__link">
+    12. Periodical growth
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-weekend-and-weekday-buyers" title="13. Weekend and weekday buyers" class="md-nav__link">
+    13. Weekend and weekday buyers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-maximum-lag-time" title="14. Maximum lag time" class="md-nav__link">
+    14. Maximum lag time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-orders-per-day-of-week" title="15. Orders per day of week" class="md-nav__link">
+    15. Orders per day of week
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-transactions-vs-revenue" title="16. Transactions vs revenue" class="md-nav__link">
+    16. Transactions vs revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-transactions-per-day-of-week" title="17. Transactions per day of week" class="md-nav__link">
+    17. Transactions per day of week
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-weekday-ranking" title="18. Weekday ranking" class="md-nav__link">
+    18. Weekday ranking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-abc-labeling" title="19. ABC labeling" class="md-nav__link">
+    19. ABC labeling
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-average-order-value" title="1. Average order value" class="md-nav__link">
+    1. Average order value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-average-number-of-items-sold-1" title="2. Average number of items sold (1)" class="md-nav__link">
+    2. Average number of items sold (1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-average-number-of-items-sold-2" title="3. Average number of items sold (2)" class="md-nav__link">
+    3. Average number of items sold (2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-proportion-of-yearly-revenue" title="4. Proportion of yearly revenue" class="md-nav__link">
+    4. Proportion of yearly revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-year-over-year-sales-1" title="5. Year-over-year sales (1)" class="md-nav__link">
+    5. Year-over-year sales (1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-year-over-year-sales-2" title="5. Year-over-year sales (2)" class="md-nav__link">
+    5. Year-over-year sales (2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-days-between-orders" title="6. Days between orders" class="md-nav__link">
+    6. Days between orders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-average-time-between-orders" title="7. Average time between orders" class="md-nav__link">
+    7. Average time between orders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cumulative-revenue" title="8. Cumulative revenue" class="md-nav__link">
+    8. Cumulative revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cumulative-revenue-pivoted" title="9. Cumulative revenue pivoted" class="md-nav__link">
+    9. Cumulative revenue pivoted
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-percentage-of-total" title="10. Percentage of total" class="md-nav__link">
+    10. Percentage of total
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-best-spending-customers" title="11. Best spending customers" class="md-nav__link">
+    11. Best spending customers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-periodical-growth" title="12. Periodical growth" class="md-nav__link">
+    12. Periodical growth
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-weekend-and-weekday-buyers" title="13. Weekend and weekday buyers" class="md-nav__link">
+    13. Weekend and weekday buyers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-maximum-lag-time" title="14. Maximum lag time" class="md-nav__link">
+    14. Maximum lag time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-orders-per-day-of-week" title="15. Orders per day of week" class="md-nav__link">
+    15. Orders per day of week
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-transactions-vs-revenue" title="16. Transactions vs revenue" class="md-nav__link">
+    16. Transactions vs revenue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-transactions-per-day-of-week" title="17. Transactions per day of week" class="md-nav__link">
+    17. Transactions per day of week
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-weekday-ranking" title="18. Weekday ranking" class="md-nav__link">
+    18. Weekday ranking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-abc-labeling" title="19. ABC labeling" class="md-nav__link">
+    19. ABC labeling
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="exercise-queries">Exercise Queries<a class="headerlink" href="#exercise-queries" title="Permanent link">&para;</a></h1>
+<p>Always validate your results by checking it against a joinThemAll table in Excel or a simple SQL check query!</p>
+<p>If you want to get inspiration to solve either of these exercise queries, here's a list of demo queries you could study to solve the exercise queries:</p>
+<table>
+<thead>
+<tr>
+<th>Demo Queries</th>
+<th>Exercise Queries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1, 2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1, 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6, 8, 11</td>
+</tr>
+<tr>
+<td>7</td>
+<td>12</td>
+</tr>
+<tr>
+<td>8</td>
+<td>14</td>
+</tr>
+<tr>
+<td>9</td>
+<td>11</td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-average-order-value">1. Average order value<a class="headerlink" href="#1-average-order-value" title="Permanent link">&para;</a></h3>
+<p><strong>What is the average order value per city in 2016?</strong></p>
+<p>This is a warming up exercise.</p>
+<p>Hint: factSales has order line granularity. Do not calculate the average order line value!</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">city</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="k">avg</span> <span class="k">order</span> <span class="n">value</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">city</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="2-average-number-of-items-sold-1">2. Average number of items sold (1)<a class="headerlink" href="#2-average-number-of-items-sold-1" title="Permanent link">&para;</a></h3>
+<p><strong>What is for each product for each year the average number of items sold in an order?</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">proddesc</span><span class="p">,</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="k">year</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="n">quantity</span><span class="p">)</span><span class="o">/</span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="k">avg</span> <span class="o">#</span> <span class="n">items</span> <span class="n">sold</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">proddesc</span><span class="p">,</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="3-average-number-of-items-sold-2">3. Average number of items sold (2)<a class="headerlink" href="#3-average-number-of-items-sold-2" title="Permanent link">&para;</a></h3>
+<p><strong>What is for each product for each month in 2016 the average number of items sold in an order?</strong></p>
+<p>Order by month name, then by product description.</p>
+<p>Hint: you don't want alphabetic month name ordering. To get proper Jan - Dec ordering, you need to use the month number.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthname</span> <span class="k">as</span> <span class="n">mnth</span><span class="p">,</span> <span class="n">proddesc</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="n">quantity</span><span class="p">)</span><span class="o">/</span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="k">avg</span> <span class="o">#</span> <span class="n">items</span> <span class="n">sold</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">proddesc</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">proddesc</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="4-proportion-of-yearly-revenue">4. Proportion of yearly revenue<a class="headerlink" href="#4-proportion-of-yearly-revenue" title="Permanent link">&para;</a></h3>
+<p><strong>Calculate for each customer for each month in 2016 the proportion of yearly revenue.</strong></p>
+<p>Your answer should look something like:</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>monthname</th>
+<th>monthly proportion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Williams</td>
+<td>Jan</td>
+<td>12.30 %</td>
+</tr>
+<tr>
+<td>Williams</td>
+<td>Feb</td>
+<td>27.21 %</td>
+</tr>
+<tr>
+<td>Williams</td>
+<td>Mar</td>
+<td>0.00 %</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>Hint: in each line divide the monthly revenue by the yearly revenue for that specific customer.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">name</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span>
+     <span class="n">format</span><span class="p">(</span>
+         <span class="k">isnull</span><span class="p">(</span>
+            <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">name</span><span class="p">),</span>
+            <span class="mi">0</span>
+        <span class="p">),</span> <span class="s1">&#39;p&#39;</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="n">monthly</span> <span class="n">proportion</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">name</span><span class="p">,</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">name</span><span class="p">,</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="5-year-over-year-sales-1">5. Year-over-year sales (1)<a class="headerlink" href="#5-year-over-year-sales-1" title="Permanent link">&para;</a></h3>
+<p><strong>Calculate for each salesrep the year-over-year total sales increase for all years.</strong></p>
+<p>Hint: look at the YoY demo query and take into account that we don't want cumulative revenue.</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">salesrep</span><span class="p">,</span> <span class="k">year</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">total</span>
+    <span class="k">from</span> <span class="n">dimDate</span>
+    <span class="k">cross</span> <span class="k">join</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">salesrep</span><span class="p">,</span> <span class="k">year</span>
+
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">cur</span><span class="p">.</span><span class="n">salesrep</span><span class="p">,</span> <span class="n">cur</span><span class="p">.</span> <span class="k">year</span><span class="p">,</span>
+    <span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">total</span> <span class="o">-</span> <span class="n">prev</span><span class="p">.</span><span class="n">total</span><span class="p">)</span><span class="o">/</span><span class="n">prev</span><span class="p">.</span><span class="n">total</span> <span class="k">as</span> <span class="p">[</span><span class="n">YoY</span> <span class="n">Rev</span> <span class="n">Increase</span> <span class="o">%</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">cte</span> <span class="k">as</span> <span class="n">cur</span> <span class="k">join</span> <span class="n">cte</span> <span class="k">as</span> <span class="n">prev</span>
+    <span class="k">on</span> <span class="n">cur</span><span class="p">.</span><span class="n">salesrep</span> <span class="o">=</span> <span class="n">prev</span><span class="p">.</span><span class="n">salesrep</span>
+    <span class="k">and</span> <span class="n">prev</span><span class="p">.</span><span class="k">year</span> <span class="o">=</span> <span class="n">cur</span><span class="p">.</span><span class="k">year</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+
+
+<h3 id="5-year-over-year-sales-2">5. Year-over-year sales (2)<a class="headerlink" href="#5-year-over-year-sales-2" title="Permanent link">&para;</a></h3>
+<p><strong>Calculate monthly year-over-year sales increase (percentage, non cumulative) for each city for all years.</strong></p>
+<p>A solution in the same fashion as previous solution would be:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">city</span><span class="p">,</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthNo</span><span class="p">,</span> <span class="n">monthName</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">total</span>
+    <span class="k">from</span> <span class="n">dimDate</span>
+    <span class="k">cross</span> <span class="k">join</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+        <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+        <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">city</span><span class="p">,</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthNo</span><span class="p">,</span> <span class="n">monthName</span>
+
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">cur</span><span class="p">.</span><span class="n">city</span><span class="p">,</span> <span class="n">cur</span><span class="p">.</span><span class="k">year</span><span class="p">,</span> <span class="n">cur</span><span class="p">.</span><span class="n">monthName</span><span class="p">,</span>
+    <span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">total</span> <span class="o">-</span> <span class="n">prev</span><span class="p">.</span><span class="n">total</span><span class="p">)</span><span class="o">/</span><span class="n">prev</span><span class="p">.</span><span class="n">total</span> <span class="k">as</span> <span class="p">[</span><span class="n">YoY</span> <span class="n">Rev</span> <span class="n">Increase</span> <span class="o">%</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">cte</span> <span class="k">as</span> <span class="n">cur</span> <span class="k">join</span> <span class="n">cte</span> <span class="k">as</span> <span class="n">prev</span>
+    <span class="k">on</span> <span class="n">cur</span><span class="p">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">prev</span><span class="p">.</span><span class="n">city</span>
+    <span class="k">and</span> <span class="n">prev</span><span class="p">.</span><span class="n">monthNo</span> <span class="o">=</span> <span class="n">cur</span><span class="p">.</span><span class="n">monthNo</span>
+    <span class="k">and</span> <span class="n">prev</span><span class="p">.</span><span class="k">year</span> <span class="o">=</span> <span class="n">cur</span><span class="p">.</span><span class="k">year</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">city</span><span class="p">,</span> <span class="k">year</span><span class="p">,</span> <span class="n">cur</span><span class="p">.</span><span class="n">monthNo</span>
+</pre></div>
+
+
+<p>A whole different soltion would be to make use of your knowledge of the available years in the database. Usually it is bad style to use your knowledge of specific data in a database, but we want to show you this solution anyway:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span>
+        <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">year</span> <span class="k">when</span> <span class="mi">2016</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev</span><span class="p">,</span>
+        <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">year</span> <span class="k">when</span> <span class="mi">2015</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">revLY</span>
+    <span class="k">from</span> <span class="n">dimDate</span>
+    <span class="k">cross</span> <span class="k">join</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+        <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+        <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+    <span class="k">where</span> <span class="k">year</span> <span class="k">in</span> <span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">2016</span><span class="p">)</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">city</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">city</span><span class="p">,</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">rev</span><span class="p">,</span> <span class="n">revLY</span><span class="p">,</span>
+    <span class="p">(</span><span class="n">rev</span> <span class="o">-</span> <span class="n">revLY</span><span class="p">)</span><span class="o">/</span><span class="n">revLY</span> <span class="k">as</span> <span class="p">[</span><span class="n">YoY</span> <span class="n">Rev</span> <span class="n">Increase</span> <span class="o">%</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>A better solution in the same direction of thinking would be to use the lag() window function:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="k">isnull</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev</span><span class="p">,</span>
+        <span class="n">lag</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">city</span><span class="p">,</span> <span class="n">monthno</span> <span class="k">order</span> <span class="k">by</span> <span class="k">year</span><span class="p">)</span> <span class="k">as</span> <span class="n">revLY</span>
+    <span class="k">from</span> <span class="n">dimDate</span>
+    <span class="k">cross</span> <span class="k">join</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+        <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+        <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">city</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">city</span><span class="p">,</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthName</span><span class="p">,</span> <span class="p">(</span><span class="n">rev</span> <span class="o">-</span> <span class="n">revLY</span><span class="p">)</span><span class="o">/</span><span class="n">revLY</span> <span class="k">as</span> <span class="p">[</span><span class="o">%</span> <span class="n">YoY</span> <span class="n">rev</span> <span class="n">increase</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">&gt;</span> <span class="p">(</span><span class="k">select</span> <span class="k">min</span><span class="p">(</span><span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">))</span> <span class="k">from</span> <span class="n">factSales</span><span class="p">)</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">city</span><span class="p">,</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthNo</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that in order to get rid of all NULL values from our first year we've added the guard <code>year &gt; (select min(year(orderdate)) from factSales)</code>.</p>
+<h3 id="6-days-between-orders">6. Days between orders<a class="headerlink" href="#6-days-between-orders" title="Permanent link">&para;</a></h3>
+<p><strong>What is for each customer the number of days between their last and last but one order?</strong></p>
+<p>Hints:</p>
+<ol>
+<li>use the row_number() window function to rank orders based on their order date</li>
+<li>then select the most recent 2 (the most recent having the highest rank)</li>
+</ol>
+<p>First we solve a more general question: what are last and last but one order dates for each customer?</p>
+<p>We use the row_number() window function to tank each order line. Since factSales has order line granularity, you have to group on orderno. A tie breaker for order on the same date (e.g. orderno) is not necessary</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span>
+    <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rno</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span> <span class="c1">-- ! watch this: possibly more than 1 orderline per orderno!</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rno</span> <span class="o">&lt;=</span> <span class="mi">2</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Now it's easy to specialize to calculating the difference between both dates</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span>
+        <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rno</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="k">min</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="k">max</span><span class="p">(</span><span class="n">orderdate</span><span class="p">))</span> <span class="k">as</span> <span class="n">diff</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rno</span> <span class="o">&lt;=</span> <span class="mi">2</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>A slightly different type of solution is to use a lead() in combination with row_number(). The lead() is used to calculate for each row (order) the difference in days with the immediately preceding order.</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span>
+        <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rno</span><span class="p">,</span>
+        <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">lead</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">),</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">diff</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">diff</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rno</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note: though a bit more difficult to grasp, we can also solve this using the cross apply table operator:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="k">min</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="k">max</span><span class="p">(</span><span class="n">orderdate</span><span class="p">))</span> <span class="k">as</span> <span class="n">diff</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="n">apply</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">top</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+    <span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">where</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>  <span class="c1">-- factSales has order line granularity!</span>
+    <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">,</span> <span class="n">orderno</span>
+<span class="p">)</span> <span class="n">t</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Finally, a more traditional (but properly working) approach would be to use a correlated subquery. I suspect this query to be less performant than the cross apply solution as in this solution the factSales will be re-queried for each line in factSales, whereas in the cross apply solution it will be queried for each customer</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="k">min</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="k">max</span><span class="p">(</span><span class="n">orderdate</span><span class="p">))</span> <span class="k">as</span> <span class="n">diff</span>
+<span class="k">from</span> <span class="n">factSales</span> <span class="n">s</span>
+<span class="k">where</span> <span class="n">orderno</span> <span class="k">in</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">top</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="n">orderno</span>
+    <span class="k">from</span> <span class="n">factSales</span> <span class="n">si</span>
+    <span class="k">where</span> <span class="n">si</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span>
+    <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span>
+<span class="p">)</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="7-average-time-between-orders">7. Average time between orders<a class="headerlink" href="#7-average-time-between-orders" title="Permanent link">&para;</a></h3>
+<p><strong>What is for each customer the average time lag between 2 orders of the 5 most recent orders of this customer?</strong></p>
+<p>So you have to collect the 5 most recent orders per customer, calculate the 4 time lags between subsequent orders and then calculate the average of these 4 time lags.</p>
+<p>Hints:</p>
+<ol>
+<li>use the lead() window function to look something up in a successor row</li>
+<li>use the avg() function to calculate an average</li>
+<li>check/test your results</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span>
+    <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">,</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="n">rno</span><span class="p">,</span>
+    <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">lead</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">),</span> <span class="n">orderdate</span> <span class="p">)</span> <span class="k">as</span> <span class="n">tlag</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span>  <span class="k">avg</span><span class="p">(</span><span class="k">convert</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">tlag</span><span class="p">))</span> <span class="k">as</span> <span class="p">[</span><span class="k">avg</span> <span class="n">time</span> <span class="n">lag</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rno</span> <span class="o">&lt;=</span> <span class="mi">4</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that we calculate the following average expression: (d2 - d1) + (d3 - d2) + (d4 - d3) + (d5 - d4)/4 which can be simplified to (d5-d1)/4. In SQL:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span>
+        <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rno</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="k">min</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="k">max</span><span class="p">(</span><span class="n">orderdate</span><span class="p">))</span> <span class="k">as</span> <span class="n">diff</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rno</span> <span class="k">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>The main difference with the first solution is that if you don't have at least 5 dates for different orders, the latter gives 0 (min and max are the same) whereas the first solution gives the average of all dates it found, even if there were less than 5. You can, however, adapt the second solution to get the same behavior:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">,</span>
+        <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rno</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+    <span class="k">convert</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="k">min</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="k">max</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)))</span><span class="o">/</span><span class="p">(</span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="k">as</span> <span class="n">diff</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rno</span> <span class="o">&lt;=</span> <span class="mi">5</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="8-cumulative-revenue">8. Cumulative revenue<a class="headerlink" href="#8-cumulative-revenue" title="Permanent link">&para;</a></h3>
+<p><strong>Calculate total revenue and total cumulative revenue for each year, for each month</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">)</span> <span class="k">as</span> <span class="n">cumrev</span>
+<span class="k">from</span> <span class="n">dimDate</span> <span class="n">d</span>
+<span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p><strong>Visualize the result in a combo chart with years on slicers</strong></p>
+<h3 id="9-cumulative-revenue-pivoted">9. Cumulative revenue pivoted<a class="headerlink" href="#9-cumulative-revenue-pivoted" title="Permanent link">&para;</a></h3>
+<p>Calculate cumulative revenue for each year, each month, each regioncode and each product category. Present in pivot format with product category on columns</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">regioncode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">regioncode</span> <span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">)</span> <span class="k">as</span> <span class="n">Bio</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">regioncode</span> <span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">)</span> <span class="k">as</span> <span class="n">Lux</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="n">linetotal</span> <span class="k">end</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">regioncode</span> <span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">)</span> <span class="k">as</span> <span class="n">Zuv</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">and</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">year</span><span class="p">,</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">regioncode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p><strong>Visualize in a stacked bar chart (product categories as series), with months on x-axis and years and region code on slicers.</strong></p>
+<h3 id="10-percentage-of-total">10. Percentage of total<a class="headerlink" href="#10-percentage-of-total" title="Permanent link">&para;</a></h3>
+<p><strong>Calculate the monthly revenue in 2016 of each product category as a percentage of total revenue for that product category in that year.</strong></p>
+<p>Hint: the demo query calculates an Excel equivalent of percentage of row total. Here you have to calculate the Excel percentage of column total equivalent.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">catcode</span><span class="p">))</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>If you want to present in pivot format with product categories on columns, it is easiest to do so with previous query as a common table expression:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+<span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">catcode</span><span class="p">))</span> <span class="k">as</span> <span class="p">[</span><span class="o">%</span><span class="n">rev</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">cross</span> <span class="k">join</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">and</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">catcode</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">monthname</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;bio&#39;</span> <span class="k">then</span> <span class="p">[</span><span class="o">%</span><span class="n">rev</span><span class="p">]</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">bio</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;lux&#39;</span> <span class="k">then</span> <span class="p">[</span><span class="o">%</span><span class="n">rev</span><span class="p">]</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">lux</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">catcode</span> <span class="o">=</span> <span class="s1">&#39;zuv&#39;</span> <span class="k">then</span> <span class="p">[</span><span class="o">%</span><span class="n">rev</span><span class="p">]</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">zuv</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Although summing percentages from the cte may look ridiculous, it is save here, because you will only sum a single value for a particular month/product category combination. So you might just as well have used a max() or a min() in the query above.</p>
+<h3 id="11-best-spending-customers">11. Best spending customers<a class="headerlink" href="#11-best-spending-customers" title="Permanent link">&para;</a></h3>
+<p><strong>Which customers in each region spent most in 2016?</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span> <span class="n">custno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">totalSpent</span><span class="p">,</span>
+        <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">regioncode</span> <span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rno</span>
+    <span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+    <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+        <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span>  <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">regioncode</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">regioncode</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">totalSpent</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">rno</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="12-periodical-growth">12. Periodical growth<a class="headerlink" href="#12-periodical-growth" title="Permanent link">&para;</a></h3>
+<p><strong>What is for each product category the yearly growth (percentage) of quantity sold in 2015 and 2016?</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">yr</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">totSales</span><span class="p">,</span>
+    <span class="n">lag</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">))</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">catcode</span> <span class="k">order</span> <span class="k">by</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">))</span> <span class="k">as</span> <span class="n">totSalesLY</span>
+    <span class="k">from</span> <span class="n">dimProduct</span> <span class="n">p</span>
+    <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+        <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">),</span> <span class="n">catcode</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">yr</span><span class="p">,</span> <span class="n">catcode</span><span class="p">,</span> <span class="p">(</span><span class="n">totSales</span> <span class="o">-</span> <span class="n">totSalesLY</span><span class="p">)</span><span class="o">/</span><span class="n">totSalesLY</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">totSalesLY</span> <span class="k">is</span> <span class="k">not</span> <span class="k">null</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="13-weekend-and-weekday-buyers">13. Weekend and weekday buyers<a class="headerlink" href="#13-weekend-and-weekday-buyers" title="Permanent link">&para;</a></h3>
+<p>Weekend buyers place at least 40% of their orders in weekends.</p>
+<p><strong>Which customers can be labeled as weekend buyers?</strong></p>
+<p>Hints:</p>
+<ol>
+<li>look at query 11 from the demo series</li>
+<li>use a having clause if you have a condition on a group result</li>
+<li>keep in mind that factSales has order line granularity</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="c1">-- select all unique orders with their customer and order date</span>
+    <span class="k">select</span> <span class="k">distinct</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="k">having</span> <span class="k">avg</span><span class="p">(</span><span class="k">case</span> <span class="k">when</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="k">then</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">4</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Well, that's a funny looking having clause ... It is a pattern you can often use when you have to produce a percentage of countable events, in this case order transactions in the weekend as a percentage of all order transactions. In the case we label each positive transaction with a 1 and each negative transaction with a 0. Then we calculate the average of this column of 1-2 and 0-s. That average is exactly the percentage of 1-s or the percentage of positive events.</p>
+<h3 id="14-maximum-lag-time">14. Maximum lag time<a class="headerlink" href="#14-maximum-lag-time" title="Permanent link">&para;</a></h3>
+<p><strong>What is for each customer the longest period (in days) between two consecutive orders in January 2016?</strong></p>
+<p>Note that you can only calculate this for customers that placed at least 2 orders in 2016.</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+        <span class="n">datediff</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">lead</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="n">over</span> <span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">custno</span> <span class="k">order</span> <span class="k">by</span> <span class="n">orderdate</span> <span class="k">desc</span><span class="p">),</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">diff</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span> <span class="k">and</span> <span class="k">month</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="k">max</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span> <span class="k">as</span> <span class="n">maxdiff</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">where</span> <span class="n">diff</span> <span class="k">is</span> <span class="k">not</span> <span class="k">null</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="15-orders-per-day-of-week">15. Orders per day of week<a class="headerlink" href="#15-orders-per-day-of-week" title="Permanent link">&para;</a></h3>
+<p><strong>Present for each customer their number of orders per day of week in 2016 in an Excel column chart</strong></p>
+<p>Hint: look at queries 11 and 12.</p>
+<p>First create a result without pivoting:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">dy</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">orders</span><span class="p">]</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Then pivot. First we pivot using the case operator:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">1</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Sunday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">2</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Monday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">3</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Tuesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">4</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Wednesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">5</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Thursday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">6</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Friday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">7</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Saturday</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Looks ok, right? It isn't, however. In the pivoted solution we are counting order lines instead of unique orders. We've lost the distinct feature from the first non pivoted solution. We solve by first filtering the unique custno, orderno, orderdate combination in 2016 in the factSales table:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="k">distinct</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">orderdate</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">1</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Sunday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">2</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Monday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">3</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Tuesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">4</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Wednesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">5</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Thursday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">6</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Friday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">7</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Saturday</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>If we join with dimDate, we can make use of the pre-calculated days:</p>
+<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">cte</span> <span class="k">as</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="k">distinct</span> <span class="n">custno</span><span class="p">,</span> <span class="n">orderno</span><span class="p">,</span> <span class="n">dayInWeek</span>
+    <span class="k">from</span> <span class="n">dimDate</span>
+    <span class="k">join</span> <span class="n">factSales</span>
+        <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+    <span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="p">)</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">dayInWeek</span> <span class="k">when</span> <span class="mi">1</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Sunday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">dayInWeek</span> <span class="k">when</span> <span class="mi">2</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Monday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">dayInWeek</span> <span class="k">when</span> <span class="mi">3</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Tuesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">dayInWeek</span> <span class="k">when</span> <span class="mi">4</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Wednesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">dayInWeek</span> <span class="k">when</span> <span class="mi">5</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Thursday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">dayInWeek</span> <span class="k">when</span> <span class="mi">6</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Friday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">dayInWeek</span> <span class="k">when</span> <span class="mi">7</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Saturday</span>
+<span class="k">from</span> <span class="n">cte</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>There is no need to left join here, as the explicit weekday column calculation already takes care of that.</p>
+<p>Alternatively we can use T-SQL's pivot table operator:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">Sunday</span><span class="p">,</span> <span class="n">Monday</span><span class="p">,</span> <span class="n">Tuesday</span><span class="p">,</span> <span class="n">Wednesday</span><span class="p">,</span> <span class="n">Thursday</span><span class="p">,</span> <span class="n">Friday</span><span class="p">,</span> <span class="n">Saturday</span>
+<span class="k">from</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">as</span> <span class="n">dy</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">orders</span><span class="p">]</span>
+    <span class="k">from</span> <span class="n">factSales</span>
+    <span class="k">where</span> <span class="k">year</span><span class="p">(</span><span class="n">orderdate</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
+    <span class="k">group</span> <span class="k">by</span> <span class="n">custno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span>
+<span class="p">)</span> <span class="k">as</span> <span class="n">T1</span>
+<span class="n">pivot</span> <span class="p">(</span>
+    <span class="k">sum</span><span class="p">([</span><span class="o">#</span><span class="n">orders</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">dy</span> <span class="k">in</span> <span class="p">(</span><span class="n">Sunday</span><span class="p">,</span> <span class="n">Monday</span><span class="p">,</span> <span class="n">Tuesday</span><span class="p">,</span> <span class="n">Wednesday</span><span class="p">,</span> <span class="n">Thursday</span><span class="p">,</span> <span class="n">Friday</span><span class="p">,</span> <span class="n">Saturday</span><span class="p">)</span>
+<span class="p">)</span> <span class="n">asT2</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that Excel will handle the NULLs properly.</p>
+<h3 id="16-transactions-vs-revenue">16. Transactions vs revenue<a class="headerlink" href="#16-transactions-vs-revenue" title="Permanent link">&para;</a></h3>
+<p><strong>Create a (regular) chart in Excel comparing monthly sales transactions with monthly revenue in 2016.</strong></p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span>
+    <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">as</span> <span class="p">[</span><span class="o">#</span><span class="n">tx</span><span class="p">],</span>
+    <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">as</span> <span class="n">rev</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<h3 id="17-transactions-per-day-of-week">17. Transactions per day of week<a class="headerlink" href="#17-transactions-per-day-of-week" title="Permanent link">&para;</a></h3>
+<p><strong>Present for each customer their number of orders per day of week in January 2016.</strong></p>
+<p>Being lazy and copying a proven solution for a new problem is often a good thing. But this solution needs some more.</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- inferior solution</span>
+<span class="k">select</span> <span class="n">custno</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">1</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Sunday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">2</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Monday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">3</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Tuesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">4</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Wednesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">5</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Thursday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">6</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Friday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">7</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Saturday</span>
+<span class="k">from</span> <span class="n">factSales</span>
+<span class="k">where</span> <span class="n">orderdate</span> <span class="k">between</span> <span class="s1">&#39;2016-01-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2016-01-31&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Oops, we lost track of a number of customers now the time frame is a lot smaller. Let's fix that:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">1</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Sunday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">2</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Monday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">3</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Tuesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">4</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Wednesday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">5</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Thursday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">6</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Friday</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="k">case</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">orderdate</span><span class="p">)</span> <span class="k">when</span> <span class="mi">7</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span><span class="p">)</span> <span class="k">as</span> <span class="n">Saturday</span>
+<span class="k">from</span> <span class="n">dimCustomer</span> <span class="k">c</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">s</span><span class="p">.</span><span class="n">custno</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="k">and</span> <span class="n">orderdate</span> <span class="k">between</span> <span class="s1">&#39;2016-01-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2016-01-31&#39;</span>
+<span class="k">group</span> <span class="k">by</span> <span class="k">c</span><span class="p">.</span><span class="n">custno</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Note that the order date condition should not be in the where clause but in the on clause in order to really get all customers. There is no need to outer join dimDate as well, because we explicitly add columns for each weekday. In the result you can see that there haven't been any sales on Mondays, Tuesdays and Thursdays.</p>
+<h3 id="18-weekday-ranking">18. Weekday ranking<a class="headerlink" href="#18-weekday-ranking" title="Permanent link">&para;</a></h3>
+<p><strong>Give for each month in 2016 a weekday ranking with the weekday with the most transactions on top.</strong></p>
+<p>Present in pivot format with weekdays on rows and month names on columns. Show results in an Excel chart.</p>
+<p>Hint: look at query 13 from the demo series.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span> <span class="k">as</span> <span class="n">dyno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span> <span class="n">dy</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">1</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Jan</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">2</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Feb</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">3</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Mar</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">4</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Apr</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">5</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">May</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">6</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Jun</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">7</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Jul</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">8</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Aug</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">9</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Sep</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">10</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Oct</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">11</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">Nov</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="k">case</span> <span class="n">monthno</span> <span class="k">when</span> <span class="mi">12</span> <span class="k">then</span> <span class="n">orderno</span> <span class="k">end</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="nb">Dec</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">),</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Tsss, that's an odd looking solution. And not really intuitive either. And yet the only thing we did was substitute the count(case ...) for the count(orderdate) in previous solution.</p>
+<p>If I had to solve this query without having solved the previous one first, I don't think I would have succeeded. That's why it is a very practical and good strategy to always try to solve a simpler version of your query to get some sense of structure and solution direction.</p>
+<p>It is debatable whether this result set format is the most convenient to base visuals on in charts. Perhaps the unpivoted version below is more suited in Excel:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span> <span class="k">as</span> <span class="n">dyno</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span> <span class="n">dy</span><span class="p">,</span>
+    <span class="n">rank</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span><span class="n">partition</span> <span class="k">by</span> <span class="n">monthno</span> <span class="k">order</span> <span class="k">by</span> <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">orderno</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="k">as</span> <span class="n">rnk</span>
+<span class="k">from</span> <span class="n">dimDate</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">factSales</span>
+    <span class="k">on</span> <span class="n">orderdate</span> <span class="o">=</span> <span class="n">dat</span>
+<span class="k">where</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">monthname</span><span class="p">,</span> <span class="n">datename</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">),</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">monthno</span><span class="p">,</span> <span class="n">datepart</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">dat</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+
+<p>Because dimDate has additional columns for month number and month name, we can use them in this query. However, there are no additional columns for weekday and weekday number, so we have to calculate them.</p>
+<h3 id="19-abc-labeling">19. ABC labeling<a class="headerlink" href="#19-abc-labeling" title="Permanent link">&para;</a></h3>
+<p><strong>Calculate ABC labeling for all product categories.</strong></p>
+<p>Hint: look at query 15 from the demo series.</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span> <span class="n">catcode</span><span class="p">,</span>
+    <span class="k">case</span>
+        <span class="k">when</span> <span class="n">percent_rank</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">2</span> <span class="k">then</span> <span class="s1">&#39;A&#39;</span>
+        <span class="k">when</span> <span class="n">percent_rank</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">linetotal</span><span class="p">)</span> <span class="k">desc</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">7</span> <span class="k">then</span> <span class="s1">&#39;C&#39;</span>
+        <span class="k">else</span> <span class="s1">&#39;B&#39;</span>
+    <span class="k">end</span> <span class="k">as</span> <span class="n">label</span>
+<span class="k">from</span> <span class="n">dimProduct</span> <span class="n">p</span>
+<span class="k">join</span> <span class="n">factSales</span> <span class="n">s</span>
+    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">prodno</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">prodno</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">catcode</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">catcode</span>
+<span class="p">;</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../demoqueries/" title="Demo Queries" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Demo Queries
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
